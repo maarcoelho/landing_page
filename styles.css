@@ -1,18 +1,21 @@
 body {
     margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
+    display: flex;
+    flex-direction: column;
+    color: #F9FAF8;
     background-color: #1F2937;
-    padding: 0 200px 50px 200px;
-    /*top | right | bottom |left */
-    color: white;
 }
 
 /*navbar*/
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding: 25px 25px 0 25px;
 }
 
 ul {
@@ -26,12 +29,15 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 36px;
     padding: 36px;
 }
 
-.container {
+.textbox {
     display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-right: 50px;
+    flex-basis: 400px;
 }
 
 .heroimage {
@@ -44,16 +50,36 @@ ul {
     height: auto;
 }
 
-.textbox {
-    display: flex;
-    flex-direction: column;
-}
+
 
 .textbox h1 {
-    font-size: 60px;
+    font-size: 48px;
+    font-weight: 800;
 }
 
+li,
+.textbox p {
+    color: #E5E7EB;
+    font-size: 18px;
+}
 
+li a {
+    text-decoration: none;
+    color: #E5E7EB;
+
+}
+
+.signup button {
+    background-color: #3882F6;
+    color: white;
+    padding: 10px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/*content*/
 .content_title {
     text-align: center;
     margin: 32px 0;
@@ -64,13 +90,96 @@ ul {
 .content {
     display: flex;
     justify-content: center;
-    gap: 52px;
+    gap: 60px;
 }
 
 .illustration {
-    max-width: 200px;
+    width: 200px;
+    height: 200px;
 }
 
 .illustration img {
-    border: 5px blue;
+    width: 100%;
+    height: 100%;
+    border: 5px solid blue;
+    border-radius: 25px;
+}
+
+.text {
+    text-align: center;
+}
+
+/*Quote*/
+
+.quote {
+    display: flex;
+    font-size: 36px;
+    color: #1F2937;
+    padding: 50px;
+    background-color: #E5E7EB;
+    margin-top: 60px;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-style: italic;
+}
+
+/* call to action*/
+
+.box_background {
+    display: flex;
+}
+
+.box {
+    display: flex;
+    background-color: #3882F6;
+    padding: 40px;
+    width: 900px;
+    border-radius: 20px;
+    margin: 70px auto;
+    gap: 50px;
+    align-items: left;
+    justify-content: center;
+    gap: 150px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    color: white;
+}
+
+.title_call {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.subtitle {
+    font-size: 20px;
+}
+
+.button_action {
+    margin-top: 15px;
+}
+
+.button_action button {
+    color: white;
+    background-color: #3882F6;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 5px;
+    width: 100px;
+
+}
+
+/*footer*/
+footer {
+    background-color: #1F2937;
+    display: flex;
+    color: white;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
 }
